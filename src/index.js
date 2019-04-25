@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
           var data = fetch('https://randomuser.me/api/')
             .then( res => res.json() )
             .then( json => console.log(json) )
+            return data;
   }
 
   fetchData()
-  
+
   console.log("CONTENT LOADED!");
 });
